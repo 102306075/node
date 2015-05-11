@@ -1,0 +1,21 @@
+doctype html
+html(lang='zh-TW')
+	head
+		meta(charset='UTF-8')
+		title ptt
+	body
+		form#search(method='GET', action='http://localhost:3000/search')
+			| StartDate:
+			input(type='text', name='startdate')
+			br
+			| EndDate:
+			input(type='text', name='enddate')
+			br
+			| 關鍵字1 :
+			input(type='text', name='keyword1')
+			br
+			| 關鍵字2 :
+			input(type='text', name='keyword2')
+			br
+			button(name='submit') 搜尋
+			br
